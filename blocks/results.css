@@ -1,0 +1,33 @@
+.results {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff9df;
+  padding: 50px;
+}
+
+.results__container {
+  margin-top: 100px;
+}
+
+.results__cards {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+}
+
+.results__card {
+  display: inline-block;
+  width: calc((100%-100px) / 3);
+}
+
+@media screen and (max-width: 320px) {
+  .results{
+    padding: 10px;
+  }
+
+  .results__cards{
+    gap: 20px;
+  }
+}

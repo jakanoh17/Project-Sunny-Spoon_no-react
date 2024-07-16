@@ -1,0 +1,122 @@
+/* .form {
+} */
+
+.form__container {
+  min-height: 132px;
+  padding: 0 5px 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__query {
+  height: min-content;
+}
+
+.form__query_empty {
+  color: #000c;
+  font-style: italic;
+}
+
+.form__container-text {
+  color: black;
+  font-size: 25px;
+}
+
+/* .form__image_container {
+} */
+
+.form__image {
+  max-width: 700px;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.form__check-box {
+  font-family: "Ubuntu";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 70px;
+  max-width: 700px;
+  padding-top: 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+.form__input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form__input {
+  display: block;
+  border: black 1px solid;
+  border-radius: 6px;
+  color: black;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  width: 700px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.form__input_type_text {
+  background-color: transparent;
+  font-family: "Ubuntu", "Calibri", "Serif";
+  border: none;
+  min-height: 50px;
+  margin: auto;
+}
+
+/* Might not want to keep this, if we can just use the enter key to search. */
+/* .form__input_btn{
+    width: 40px;
+    align-items: center;
+    border-radius: 6px;
+} */
+
+.form__container_results-btn {
+  display: flex;
+  justify-content: center;
+  /* background-color: white; */
+  margin-top: 50px;
+}
+
+.form__results-btn {
+  position: static;
+  border-radius: 40px;
+  background-color: rgba(248, 207, 41, 0.9);
+  border: 1px solid rgba(248, 207, 41, 0.9);
+  padding: 5px;
+  box-shadow: 2px 5px 0px rgba(255, 229, 124, 0.9);
+  cursor: pointer;
+}
+
+:checked + label {
+  color: green;
+}
+
+[type="checkbox"]:checked {
+  accent-color: limegreen;
+}
+
+@media screen and (max-width: 520px) {
+  .form__check-box {
+    height: auto;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form {
+    margin-top: 20px;
+  }
+
+  .form__container {
+    min-height: 100px;
+  }
+}
