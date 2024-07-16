@@ -1,0 +1,22 @@
+.cards{
+max-width: 500px;
+width: 100%;
+}
+
+.cards__list{
+    list-style: none;
+    display: grid;
+    /* edit size as necessary */
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-gap: 15px 25px;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+    .cards__list{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
